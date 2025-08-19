@@ -1,0 +1,18 @@
+# netlify.toml — Trap Gang Music: Sovereign Node Deploy Config
+
+[build]
+  command = ""
+  publish = "./"
+
+[dev]
+  command = "echo 'Live from the Sovereign Node…'"
+  port = 8888
+  targetPort = 8888
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
