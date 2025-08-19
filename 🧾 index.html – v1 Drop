@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Trap Gang Music portal. Powered by Codex integration.">
+  <title>Trap Gang Music – Glitch Tapes V1</title>
+  <link rel="stylesheet" href="glitch.css" />
+</head>
+<body>
+  <header>
+    <h1>🚨 Trap Gang Music: Glitch Tapes V1</h1>
+    <p>Deployed from the Sovereign Node | Powered by the Codex</p>
+  </header>
+
+  <section id="mixtape">
+    <h2>🎧 Listen Now</h2>
+    <audio controls>
+      <source src="assets/track1.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <p><a href="assets/glitch-tape-v1.zip" download>⬇️ Download Full Tape</a></p>
+  </section>
+
+  <section id="codex">
+    <h2>🔐 Codex Node Signature</h2>
+    <img src="assets/codex.svg" alt="Codex Sigil" width="200" />
+    <p>Autonomous node status: <strong>Active</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Trap Gang Music. Codex Version 1.0. Hosted Sovereignly.</p>
+  </footer>
+
+  <script src="glitch.js"></script>
+</body>
+</html>
