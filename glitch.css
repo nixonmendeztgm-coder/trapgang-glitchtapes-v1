@@ -1,0 +1,43 @@
+/* glitch.css — Glitch Tape Visuals */
+body {
+  background-color: #000;
+  color: #0ff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  animation: glitch 1.5s infinite;
+  color: #f0f;
+}
+
+p {
+  font-size: 1.2em;
+  padding: 1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 0 blue, -2px 0 red; }
+  60% { text-shadow: -2px 0 blue, 2px 0 red; }
+  80% { text-shadow: 2px 2px #0ff, -2px -2px #f0f; }
+  100% { text-shadow: 0 0 0 black; }
+}
